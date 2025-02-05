@@ -252,77 +252,107 @@
                   <div class="card-body">
                     <!-- Personal Information Form Section -->
                     <form>
-                      <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstName"
-                          name="firstName"
-                        />
+                      <div class="form-group row">
+                        <label for="firstName" class="col-sm-2 col-form-label"
+                          >First Name</label
+                        >
+                        <div class="col-sm-4">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            name="firstName"
+                          />
+                        </div>
+                        <label for="lastName" class="col-sm-2 col-form-label"
+                          >Last Name</label
+                        >
+                        <div class="col-sm-4">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            name="lastName"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="lastName"
-                          name="lastName"
-                        />
+                      <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label"
+                          >Email</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                        />
+                      <div class="form-group row">
+                        <label for="phone" class="col-sm-2 col-form-label"
+                          >Phone Number</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="phone"
+                            name="phone"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input
-                          type="tel"
-                          class="form-control"
-                          id="phone"
-                          name="phone"
-                        />
+                      <div class="form-group row">
+                        <label for="address" class="col-sm-2 col-form-label"
+                          >Address</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address"
+                            name="address"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="address">Address</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="address"
-                          name="address"
-                        />
+                      <div class="form-group row">
+                        <label for="city" class="col-sm-2 col-form-label"
+                          >City</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="city"
+                            name="city"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="city">City</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="city"
-                          name="city"
-                        />
+                      <div class="form-group row">
+                        <label for="state" class="col-sm-2 col-form-label"
+                          >State</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="state"
+                            name="state"
+                          />
+                        </div>
                       </div>
-                      <div class="form-group">
-                        <label for="state">State</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="state"
-                          name="state"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="zip">Zip Code</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="zip"
-                          name="zip"
-                        />
+                      <div class="form-group row">
+                        <label for="zip" class="col-sm-2 col-form-label"
+                          >Zip Code</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="zip"
+                            name="zip"
+                          />
+                        </div>
                       </div>
                       <button
                         type="button"
@@ -357,62 +387,122 @@
                   >
                     <div class="card-body">
                       <!-- Employment History Form Section -->
-                      <form>
-                        <div class="form-group">
-                          <label for="companyName">Company Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="companyName"
-                            name="companyName"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="jobTitle">Job Title</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="jobTitle"
-                            name="jobTitle"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="jobDuties">Job Duties</label>
-                          <textarea
-                            class="form-control"
-                            id="jobDuties"
-                            name="jobDuties"
-                          ></textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="employmentDates"
-                            >Dates of Employment</label
+                      <ul
+                        class="nav nav-tabs"
+                        id="employmentHistoryTabs"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="job1-tab"
+                            data-toggle="tab"
+                            href="#job1"
+                            role="tab"
+                            aria-controls="job1"
+                            aria-selected="true"
+                            >Job 1</a
                           >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="employmentDates"
-                            name="employmentDates"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="reasonForLeaving"
-                            >Reason for Leaving</label
-                          >
-                          <textarea
-                            class="form-control"
-                            id="reasonForLeaving"
-                            name="reasonForLeaving"
-                          ></textarea>
-                        </div>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          onclick="nextSection('collapseTwo', 'collapseThree')"
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="employmentHistoryContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="job1"
+                          role="tabpanel"
+                          aria-labelledby="job1-tab"
                         >
-                          Continue
-                        </button>
-                      </form>
+                          <form>
+                            <div class="form-group row">
+                              <label
+                                for="companyName1"
+                                class="col-sm-2 col-form-label"
+                                >Company Name</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="companyName1"
+                                  name="companyName1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="jobTitle1"
+                                class="col-sm-2 col-form-label"
+                                >Job Title</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="jobTitle1"
+                                  name="jobTitle1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="jobDuties1"
+                                class="col-sm-2 col-form-label"
+                                >Job Duties</label
+                              >
+                              <div class="col-sm-10">
+                                <textarea
+                                  class="form-control"
+                                  id="jobDuties1"
+                                  name="jobDuties1"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="employmentDates1"
+                                class="col-sm-2 col-form-label"
+                                >Dates of Employment</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="employmentDates1"
+                                  name="employmentDates1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="reasonForLeaving1"
+                                class="col-sm-2 col-form-label"
+                                >Reason for Leaving</label
+                              >
+                              <div class="col-sm-10">
+                                <textarea
+                                  class="form-control"
+                                  id="reasonForLeaving1"
+                                  name="reasonForLeaving1"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="addHistoryTab()"
+                      >
+                        Add History
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="nextSection('collapseTwo', 'collapseThree')"
+                      >
+                        Continue
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -439,42 +529,94 @@
                   >
                     <div class="card-body">
                       <!-- Education Form Section -->
-                      <form>
-                        <div class="form-group">
-                          <label for="schoolName">School Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="schoolName"
-                            name="schoolName"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="degree">Degree</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="degree"
-                            name="degree"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="graduationYear">Year of Graduation</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="graduationYear"
-                            name="graduationYear"
-                          />
-                        </div>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          onclick="nextSection('collapseThree', 'collapseFour')"
+                      <ul
+                        class="nav nav-tabs"
+                        id="educationTabs"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="education1-tab"
+                            data-toggle="tab"
+                            href="#education1"
+                            role="tab"
+                            aria-controls="education1"
+                            aria-selected="true"
+                            >Education 1</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="educationContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="education1"
+                          role="tabpanel"
+                          aria-labelledby="education1-tab"
                         >
-                          Continue
-                        </button>
-                      </form>
+                          <form>
+                            <div class="form-group row">
+                              <label
+                                for="schoolName1"
+                                class="col-sm-2 col-form-label"
+                                >School Name</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="schoolName1"
+                                  name="schoolName1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="degree1"
+                                class="col-sm-2 col-form-label"
+                                >Degree</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="degree1"
+                                  name="degree1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="graduationYear1"
+                                class="col-sm-2 col-form-label"
+                                >Year of Graduation</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="graduationYear1"
+                                  name="graduationYear1"
+                                />
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="addEducationTab()"
+                      >
+                        Add Education
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="nextSection('collapseThree', 'collapseFour')"
+                      >
+                        Continue
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -501,46 +643,109 @@
                   >
                     <div class="card-body">
                       <!-- References Form Section -->
-                      <form>
-                        <div class="form-group">
-                          <label for="referenceName">Reference Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="referenceName"
-                            name="referenceName"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="referencePhone">Reference Phone</label>
-                          <input
-                            type="tel"
-                            class="form-control"
-                            id="referencePhone"
-                            name="referencePhone"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="referenceEmail">Reference Email</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="referenceEmail"
-                            name="referenceEmail"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="referenceRelationship"
-                            >Relationship</label
+                      <ul
+                        class="nav nav-tabs"
+                        id="referenceTabs"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="reference1-tab"
+                            data-toggle="tab"
+                            href="#reference1"
+                            role="tab"
+                            aria-controls="reference1"
+                            aria-selected="true"
+                            >Reference 1</a
                           >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="referenceRelationship"
-                            name="referenceRelationship"
-                          />
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="referenceContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="reference1"
+                          role="tabpanel"
+                          aria-labelledby="reference1-tab"
+                        >
+                          <form>
+                            <div class="form-group row">
+                              <label
+                                for="referenceName1"
+                                class="col-sm-2 col-form-label"
+                                >Reference Name</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="referenceName1"
+                                  name="referenceName1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="referencePhone1"
+                                class="col-sm-2 col-form-label"
+                                >Reference Phone</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="referencePhone1"
+                                  name="referencePhone1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="referenceEmail1"
+                                class="col-sm-2 col-form-label"
+                                >Reference Email</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="referenceEmail1"
+                                  name="referenceEmail1"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label
+                                for="referenceRelationship1"
+                                class="col-sm-2 col-form-label"
+                                >Relationship</label
+                              >
+                              <div class="col-sm-10">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="referenceRelationship1"
+                                  name="referenceRelationship1"
+                                />
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                      </form>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="addReferenceTab()"
+                      >
+                        Add Reference
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="nextSection('collapseFour', 'collapseFive')"
+                      >
+                        Continue
+                      </button>
                     </div>
                   </div>
                 </div>
